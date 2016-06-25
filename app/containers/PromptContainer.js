@@ -36,6 +36,7 @@ var PromptContainer = React.createClass({
       this.context.router.push('/playerTwo/' + this.state.username)
     }
   },
+
   handleUpdateUser(event){
     this.setState({
       username: event.target.value
