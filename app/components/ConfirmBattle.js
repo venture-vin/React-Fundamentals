@@ -2,7 +2,9 @@ var React = require('react');
 var PropTypes = React.PropTypes;
 var styles = require('../styles');
 var Link = require('react-router').Link;
-var UserDetails = require('../components/UserDetails'); 
+var UserDetails = require('../components/UserDetails');
+var UserDetailsWrapper = require('../components/UserDetailsWrapper');
+
 
 function puke(object){
   return <pre>{JSON.stringify(object, null, ' ')}</pre>
@@ -34,7 +36,7 @@ function ConfirmBattle(props) {
       </div>
 }
 
-confirmBattle.propTypes = {
+ConfirmBattle.propTypes = {
   isLoading: PropTypes.bool.isRequired,
   playersInfo: PropTypes.array.isRequired,
   onInitiateBattle: PropTypes.func.isRequired

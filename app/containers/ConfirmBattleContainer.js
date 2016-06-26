@@ -20,7 +20,7 @@ var ConfirmBattleContainer = React.createClass({
   componentDidMount(){
    var query = this.props.location.query;
    var that = this;
-   githubHelpers.getPlayersInfo([query.playerOne, query.PlayerTwo]).then(
+   githubHelpers.getPlayersInfo([query.playerOne, query.playerTwo]).then(
      function (players) {
         that.setState({
           isLoading: false,
@@ -41,7 +41,7 @@ var ConfirmBattleContainer = React.createClass({
     return (
       <ConfirmBattle
       isLoading={this.state.isLoading}
-      onInitiateBattle={this.prop.handleInitiateBattle}
+      onInitiateBattle={this.handleInitiateBattle}
       playersInfo={this.state.playersInfo} />
     );
   }
