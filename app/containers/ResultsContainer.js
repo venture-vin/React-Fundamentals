@@ -23,7 +23,8 @@ var ResultsContainer = React.createClass({
     return (
       <Results
       isLoading={this.state.isLoading}
-        scores={this.state.scores} />
+      playersInfo={this.props.location.state.playersInfo}
+      scores={this.state.scores} />
     );
   }
 });
