@@ -4,6 +4,9 @@ var styles = require('../styles');
 var Link = require('react-router').Link;
 var UserDetails = require('../components/UserDetails');
 var UserDetailsWrapper = require('../components/UserDetailsWrapper');
+var MainContainer = require('./MainContainer');
+var Loading = require('./Loading');
+
 
 function StartOver (){
   return (
