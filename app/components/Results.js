@@ -7,4 +7,9 @@ function Results (props) {
   )
 }
 
-module.exports = Results; 
+Results.propTypes = {
+  isLoading: PropTypes.bool.isRequired,
+  playersInfo: PropTypes.array.isRequired,
+  scores: PropTypes.array.isRequired
+}
+module.exports = Results;
